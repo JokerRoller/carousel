@@ -9,7 +9,7 @@ body {
     height: 350px;
 }
 .container {
-    height: 350px;
+    height: 500px;
     width: 600px;
     display: flex;
     position: relative;
@@ -32,13 +32,43 @@ body {
     position: absolute;
     top: 175px;
     right: 0px;
+    cursor: pointer;
 }
 .button2 {
     position: absolute;
     top: 175px;
     left: 0px;
+    cursor: pointer;
 }
 .active {
     opacity: 1;
     transition: 0.5s;
+}
+.button3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 199px;
+}
+.button4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 249px;
+}
+.button5 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+}
+.hover:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+.active2 {
+    background-color: aqua;
 }
