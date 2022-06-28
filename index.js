@@ -15,19 +15,25 @@ function right() {
     if ( i + value > 2) {
         i = -1
         test[2].classList.remove('active')
+        test2[2].classList.remove('active2')
     }
     i = i + value
+    test2[i].classList.add('active2')
     test[i].classList.add('active')
+    test2[i-value].classList.remove('active2')
     test[i-value].classList.remove('active')
 }
 function left() {
     if ( i - value < 0) {
         i = 3
         test[0].classList.remove('active')
+        test2[0].classList.remove('active2')
     }
     i = i - value
     test[i].classList.add('active')
+    test2[i].classList.add('active2')
     test[i+value].classList.remove('active')
+    test2[i+value].classList.remove('active2')
 
 }
 function pic1() {
@@ -59,5 +65,6 @@ function pic3() {
 }
 function first() {
     test[i].classList.add('active')
+    test2[i].classList.add('active2')
 };
 first()
